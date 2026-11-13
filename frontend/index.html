@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScamCheck – is this message a scam?</title>
+<meta name="description" content="Paste a suspicious SMS, WhatsApp or email message and see why it may be a scam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F6; --surface:#FFFFFF; --ink:#18212F; --muted:#5A6678; --line:#D5DBE5;
+  --accent:#2540D9; --accent-ink:#FFFFFF;
+  --safe:#1B7A57; --warn:#A86A00; --danger:#C0301F;
+  --safe-bg:#E3F4EC; --warn-bg:#FBF0D9; --danger-bg:#FBE4E0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F141C; --surface:#1A222E; --ink:#E8ECF3; --muted:#9AA6B8; --line:#2D3848;
+    --accent:#7C93FF; --accent-ink:#0F141C;
+    --safe:#4CC59A; --warn:#E9AE4B; --danger:#FF7B68;
+    --safe-bg:#12302A; --warn-bg:#35280F; --danger-bg:#3A1914;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.55 "Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:40rem;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.15;margin:0 0 .5rem;font-weight:700;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 1.5rem;max-width:34rem}
+label{display:block;font-weight:700;margin-bottom:.4rem}
+.bubble{background:var(--surface);border:1.5px solid var(--line);border-radius:1.25rem 1.25rem 1.25rem .25rem;padding:.25rem}
+.bubble:focus-within{border-color:var(--accent);outline:3px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+textarea{width:100%;min-height:9rem;resize:vertical;border:0;background:transparent;color:var(--ink);font:inherit;padding:.75rem .85rem;outline:none}
+.row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:.9rem}
+button{font:inherit;cursor:pointer;border-radius:.6rem;border:1.5px solid transparent;padding:.65rem 1.1rem}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.primary:disabled{opacity:.6;cursor:wait}
+.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.ghost:hover{border-color:var(--muted)}
+.examples{margin-top:1.1rem;color:var(--muted);font-size:.95rem}
+.examples button{padding:.35rem .75rem;margin:.25rem .3rem 0 0;font-size:.95rem}
+#result{margin-top:2rem}
+#result[hidden]{display:none}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:1rem;padding:1.25rem}
+.verdict{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.verdict h2{margin:0;font-size:1.6rem}
+.score{color:var(--muted)}
+.meter{position:relative;height:.7rem;border-radius:99px;margin:1rem 0 1.25rem;background:linear-gradient(90deg,var(--safe) 0%,var(--warn) 50%,var(--danger) 100%)}
+.pin{position:absolute;top:50%;width:1.3rem;height:1.3rem;border-radius:50%;background:var(--surface);border:3px solid var(--ink);transform:translate(-50%,-50%);transition:left .5s ease}
+.tag{display:inline-block;padding:.15rem .6rem;border-radius:99px;font-weight:700;font-size:.9rem}
+.tag.low{background:var(--safe-bg);color:var(--safe)}
+.tag.mid{background:var(--warn-bg);color:var(--warn)}
+.tag.high{background:var(--danger-bg);color:var(--danger)}
+h3{font-size:1.05rem;margin:1.25rem 0 .4rem}
+ul{margin:0;padding-left:1.2rem}
+li{margin:.3rem 0}
+.note{color:var(--muted);font-size:.9rem;margin-top:1.5rem}
+footer{margin-top:2.5rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1rem}
+@media (prefers-reduced-motion:reduce){.pin{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Got a message that feels off?</h1>
+  <p class="lede">Paste an SMS, WhatsApp or email message. ScamCheck shows the warning signs it finds and what to do next.</p>
+
+  <label for="msg">Message to check</label>
+  <div class="bubble">
+    <textarea id="msg" maxlength="2000" placeholder="Paste the message here"></textarea>
+  </div>
+  <div class="row">
+    <button class="primary" id="go">Check message</button>
+    <button class="ghost" id="clear">Clear</button>
+  </div>
+  <div class="examples" id="examples">Try an example:</div>
+
+  <section id="result" hidden aria-live="polite">
+    <div class="card">
+      <div class="verdict"><h2 id="vText"></h2><span class="score" id="vScore"></span></div>
+      <div class="meter" role="img" aria-label="Risk meter"><div class="pin" id="pin"></div></div>
+      <h3>Warning signs found</h3>
+      <ul id="flags"></ul>
+      <h3>What to do</h3>
+      <ul id="advice"></ul>
+      <p class="note" id="caveat"></p>
+    </div>
+  </section>
+
+  <footer>
+    ScamCheck gives guidance, not a guarantee. If money or personal details are involved, contact your bank or the sender through an official number you already trust. In India, you can report cyber fraud at cybercrime.gov.in or by calling 1930.
+    <br><span id="privacy">Your message stays in your browser in this demo. Nothing is sent or stored.</span>
+  </footer>
+</main>
+
+<script>
+// ---- Settings ----------------------------------------------------------
+// Leave null to use the built-in demo rules (runs fully in the browser).
+// When your FastAPI backend is deployed, set it to e.g. "https://your-api.onrender.com/analyze"
+// The API must accept {message} and return {verdict, score, red_flags, explanation}.
+const API_URL = null;
+
+// ---- Demo rules (replace with your ML model later) -----------------------
+const RULES = [
+  {re:/\b(urgent|urgently|immediately|right now|last chance|act now|expires? (today|soon)|within \d+ ?(hours?|hrs?|minutes?|mins?))\b/i, w:15, flag:"Creates false urgency to make you act without thinking"},
+  {re:/\b(otp|cvv|pin|password|aadhaar|card number)\b/i, w:25, flag:"Asks for an OTP, PIN, password or other secret"},
+  {re:/(kyc|account (will be |has been )?(blocked|suspended|closed|frozen)|sim (will be )?(blocked|deactivated)|update your (pan|kyc|details))/i, w:20, flag:"Threatens to block your account or SIM"},
+  {re:/\b(you (have )?won|lottery|prize|lucky (draw|winner)|free gift|cashback|crore|lakh)\b/i, w:20, flag:"Promises a prize, reward or large sum of money"},
+  {re:/\b(work from home|registration fee|processing fee|advance payment|pay a (small )?fee|earn \S+ per day)\b/i, w:20, flag:"Looks like a fake job or fee-based offer"},
+  {re:/(bit\.ly|tinyurl|cutt\.ly|rb\.gy|is\.gd|t\.co|goo\.gl)\//i, w:20, flag:"Uses a shortened link that hides the real website"},
+  {re:/(https?:\/\/|www\.)\S+/i, w:10, flag:"Contains a link you are asked to open"},
+  {re:/\b(sbi|hdfc|icici|axis bank|paytm|phonepe|amazon|income tax|customs|police|trai|electricity board|courier)\b/i, w:10, flag:"Mentions a trusted organisation, which scammers often imitate"},
+  {re:/(call (this )?number|whatsapp (us )?on|contact (us )?(at|on) \+?\d|\+?\d[\d ]{9,})/i, w:10, flag:"Pushes you to call or message an unknown number"}
+];
+
+const EXAMPLES = {
+  "Bank KYC": "Dear customer, your SBI account will be blocked today. Update KYC immediately: bit.ly/sbi-kyc-upd",
+  "Lottery": "Congratulations! You have won Rs 25 lakh in the lucky draw. Share your OTP and bank details on WhatsApp +91 98XXXXXXXX to claim your prize.",
+  "Job offer": "Work from home, earn 5000 per day. Pay a registration fee of Rs 999 to start. Contact us on +91 90XXXXXXXX.",
+  "Delivery update": "Hi, your order #4821 will arrive tomorrow between 2 and 5 PM. Reply 1 to reschedule."
+};
+
+function localAnalyze(text){
+  let score = 0; const flags = [];
+  for (const r of RULES){ if (r.re.test(text)){ score += r.w; flags.push(r.flag); } }
+  score = Math.min(100, score);
+  const verdict = score >= 55 ? "Likely scam" : score >= 25 ? "Suspicious" : "Low risk";
+  return {verdict, score, red_flags: flags, explanation: ""};
+}
+
+async function analyze(text){
+  if (!API_URL) return localAnalyze(text);
+  const res = await fetch(API_URL, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({message:text})});
+  if (!res.ok) throw new Error("The server could not check this message. Try again in a moment.");
+  return res.json();
+}
+
+const ADVICE = {
+  "Likely scam": ["Don’t click any link or call any number in the message.","Never share an OTP, PIN or password, even with someone claiming to be from your bank.","Block the sender, then report it at cybercrime.gov.in or call 1930."],
+  "Suspicious": ["Don’t act on the message yet. Verify it first.","Contact the organisation through its official app, website or the number on your card.","If you already shared details or paid, call your bank right away."],
+  "Low risk": ["Stay alert. Scammers also send messages that look ordinary.","If anything feels off, check with the sender on a number you already trust."]
+};
+
+const $ = id => document.getElementById(id);
+function fill(list, items){ list.replaceChildren(...items.map(t => { const li = document.createElement("li"); li.textContent = t; return li; })); }
+
+async function run(){
+  const text = $("msg").value.trim();
+  if (!text){ $("msg").focus(); return; }
+  $("go").disabled = true; $("go").textContent = "Checking…";
+  try{
+    const r = await analyze(text);
+    const cls = r.verdict === "Likely scam" ? "high" : r.verdict === "Suspicious" ? "mid" : "low";
+    $("vText").innerHTML = ""; const tag = document.createElement("span"); tag.className = "tag " + cls; tag.textContent = r.verdict; $("vText").append(tag);
+    $("vScore").textContent = "Risk score " + r.score + " of 100";
+    $("pin").style.left = Math.max(3, Math.min(97, r.score)) + "%";
+    fill($("flags"), r.red_flags.length ? r.red_flags : ["No common warning signs found"]);
+    fill($("advice"), ADVICE[r.verdict] || ADVICE["Suspicious"]);
+    $("caveat").textContent = r.explanation || (r.red_flags.length ? "" : "No warning signs found doesn’t mean a message is safe. When in doubt, verify it.");
+    $("result").hidden = false; $("result").scrollIntoView({behavior:"smooth", block:"nearest"});
+  }catch(e){
+    alert(e.message || "Something went wrong. Check your connection and try again.");
+  }finally{
+    $("go").disabled = false; $("go").textContent = "Check message";
+  }
+}
+
+for (const [name, text] of Object.entries(EXAMPLES)){
+  const b = document.createElement("button"); b.className = "ghost"; b.textContent = name;
+  b.addEventListener("click", () => { $("msg").value = text; run(); });
+  $("examples").append(b);
+}
+$("go").addEventListener("click", run);
+$("clear").addEventListener("click", () => { $("msg").value = ""; $("result").hidden = true; $("msg").focus(); });
+</script>
+</body>
+</html>
