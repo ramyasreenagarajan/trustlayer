@@ -2,7 +2,7 @@
 
 An open-source toolkit that helps protect people and AI assistants from scam messages and hidden prompt-injection attacks.
 
-> **Status:** early development (Week 1 of 8). Setup, project structure and labeling guide are complete. Models are not trained yet.
+> **Status:** early development (Week 2 of 8). Setup, project structure, labeling guide and project brief are complete. Dataset collection is next. Models are not trained yet.
 
 ## Why this project
 
@@ -48,6 +48,7 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 
 - [x] Project structure and environment
 - [x] Labeling guide and seed examples
+- [x] README and project brief
 - [ ] Dataset collection and cleaning (Week 2)
 - [ ] Baseline models and evaluation (Week 3)
 - [ ] Transformer model and explainability (Week 4)
