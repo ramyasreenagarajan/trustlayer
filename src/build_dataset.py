@@ -17,7 +17,13 @@ def norm(s):
 # ---------- 1. Load ----------
 own_files = sorted(OWN.glob("*_own.csv"))
 print("Own files found:", [p.name for p in own_files])
-own = pd.concat([pd.read_csv(p) for p in own_files], ignore_index=True)
+
+def load_own(p):
+    d = pd.read_csv(p)
+    d["source"] = d["source"].fillna("own_hard" if p.name == "hard_own.csv" else "own")
+    return d
+
+own = pd.concat([load_own(p) for p in own_files], ignore_index=True)
 
 sms = pd.read_csv(PROC / "sms_clean.csv")
 ds = pd.read_csv(PROC / "deepset_clean.csv")
