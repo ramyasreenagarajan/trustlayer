@@ -49,16 +49,25 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 - [x] Project structure and environment
 - [x] Labeling guide and seed examples
 - [x] README and project brief
-- [ ] Dataset collection and cleaning (Week 2)
+- [X] Dataset collection and cleaning (Week 2)
 - [ ] Baseline models and evaluation (Week 3)
 - [ ] Transformer model and explainability (Week 4)
 - [ ] API and web app (Week 5)
 - [ ] Agent action guard (Weeks 6-7)
 - [ ] Red-team loop and hardening (Weeks 7-8)
 
+
+## Data
+
+Public sources (credit and license details in [docs/DATASET.md](docs/DATASET.md)):
+- SMS Spam Collection, Almeida and Hidalgo (2011), UCI Machine Learning Repository, CC BY 4.0
+- deepset/prompt-injections, Hugging Face, Apache 2.0
+
+Own examples (English, Hinglish, Tanglish) are in `data/own/` and are released under CC BY 4.0. Raw public files are not stored here; see the dataset card for how to rebuild.
+
 ## Limitations
 
-TrustLayer gives guidance, not guarantees. Detection can miss attacks or flag safe messages. Results, datasets and known weaknesses will be documented here as the project progresses.
+TrustLayer gives guidance, not guarantees. Detection can miss attacks or flag safe messages. Results, datasets and known weaknesses will be documented here as the project progresses. 
 
 ## Privacy
 
