@@ -2,7 +2,7 @@
 
 An open-source toolkit that helps protect people and AI assistants from scam messages and hidden prompt-injection attacks.
 
-> **Status:** early development (Week 2 of 8). Setup, project structure, labeling guide and project brief are complete. Dataset collection is next. Models are not trained yet.
+>> **Status:** early development (Week 3 of 8). Dataset is built and documented. Baseline models are next. Models are not trained yet.
 
 ## Why this project
 
