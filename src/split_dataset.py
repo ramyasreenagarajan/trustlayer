@@ -21,6 +21,7 @@ if hard_path.exists():
     hard = pd.read_csv(hard_path)
     hard["key"] = hard["text"].map(norm)
     hard["label"] = hard["label"].astype(str).str.strip().str.lower()
+    hard["source"] = hard["source"].fillna("own_hard")
     hard = hard.drop_duplicates(subset="key")
     df = df[~df["key"].isin(hard["key"])]          # keep hard rows out of training data
     print(f"Hard set from {hard_path.name}: {len(hard)} rows")
@@ -50,3 +51,23 @@ for _, g in own_df.groupby(["label", "language"]):
 train = pd.concat([train] + own_train)
 val = pd.concat([val] + own_val)
 test = pd.concat([test] + own_test)
+
+# ---------- 3. Safety check: no overlap between sets ----------
+sets = {"train": train, "val": val, "test": test, "hard": hard}
+names = list(sets)
+for i in range(len(names)):
+    for j in range(i + 1, len(names)):
+        overlap = set(sets[names[i]]["key"]) & set(sets[names[j]]["key"])
+        assert not overlap, f"Overlap between {names[i]} and {names[j]}: {len(overlap)} texts"
+print("Overlap check passed: no text appears in more than one set.\n")
+
+# ---------- 4. Save ----------
+for name, part in sets.items():
+    part = part.sample(frac=1, random_state=SEED)
+    part[COLS].to_csv(PROC / f"{name}.csv", index=False)
+
+# ---------- 5. Report ----------
+print(pd.DataFrame({k: v["label"].value_counts() for k, v in sets.items()}).fillna(0).astype(int))
+print("\nTotals:", {k: len(v) for k, v in sets.items()})
+print("\nOwn rows per set:", {k: int(v["source"].astype(str).str.startswith("own").sum()) for k, v in sets.items()})
+print("\nLanguages per set:\n", pd.DataFrame({k: v["language"].value_counts() for k, v in sets.items()}).fillna(0).astype(int))
