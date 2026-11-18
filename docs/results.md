@@ -5,3 +5,24 @@
 |---|---|---|---|---|---|
 | Always 'safe' | (n) | (n) | 0 | 0 | Floor |
 | Keyword rules | (n) | (n) | (n) | (n) | (what stood out) |
+
+## Week 3, Day 2: TF-IDF + Logistic Regression (validation set)
+
+| Setting | Macro F1 (val) |
+|---|---|
+| word, C=0.3 | (n) |
+| word, C=1 | (n) |
+| word, C=3 | (n) |
+| word, C=10 | (n) |
+| char, C=0.3 | (n) |
+| char, C=1 | (n) |
+| char, C=3 | (n) |
+| char, C=10 | (n) |
+
+Best: (kind, C), macro F1 (n)
+Per label F1: safe (n), scam (n), prompt_injection (n)
+
+Observations:
+- Compared with the keyword rules (macro F1 n): (better/worse and why)
+- Weakest label: (label), because (reason)
+- Top features look like: (meaningful words / source fingerprints, give examples)
