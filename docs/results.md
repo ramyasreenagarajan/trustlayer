@@ -26,3 +26,14 @@ Observations:
 - Compared with the keyword rules (macro F1 n): (better/worse and why)
 - Weakest label: (label), because (reason)
 - Top features look like: (meaningful words / source fingerprints, give examples)
+
+## Week 3, Day 3: model comparison (validation set)
+
+| Model | Macro F1 | F1 safe | F1 scam | F1 injection | Recall scam | Recall injection |
+|---|---|---|---|---|---|---|
+| rules | (n) | (n) | (n) | (n) | (n) | (n) |
+| (best SVM) | (n) | (n) | (n) | (n) | (n) | (n) |
+| (best LR) | (n) | (n) | (n) | (n) | (n) | (n) |
+
+Chosen baseline: (model name) because (reason: score, recall, simplicity).
+Notes: (what surprised you; whether differences are bigger than noise)
