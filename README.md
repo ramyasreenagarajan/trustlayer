@@ -2,7 +2,7 @@
 
 An open-source toolkit that helps protect people and AI assistants from scam messages and hidden prompt-injection attacks.
 
->> **Status:** early development (Week 3 of 8). Dataset is built and documented. Baseline models are next. Models are not trained yet.
+**Status:** early development (Week 2 of 8). Setup, project structure, labeling guide and project brief are complete. Dataset collection is next. Models are not trained yet.
 
 ## Why this project
 
@@ -56,14 +56,6 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 - [ ] Agent action guard (Weeks 6-7)
 - [ ] Red-team loop and hardening (Weeks 7-8)
 
-
-## Data
-
-Public sources (credit and license details in [docs/DATASET.md](docs/DATASET.md)):
-- SMS Spam Collection, Almeida and Hidalgo (2011), UCI Machine Learning Repository, CC BY 4.0
-- deepset/prompt-injections, Hugging Face, Apache 2.0
-
-Own examples (English, Hinglish, Tanglish) are in `data/own/` and are released under CC BY 4.0. Raw public files are not stored here; see the dataset card for how to rebuild.
 
 ## Limitations
 
