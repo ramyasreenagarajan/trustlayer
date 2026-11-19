@@ -2,7 +2,7 @@
 
 An open-source toolkit that helps protect people and AI assistants from scam messages and hidden prompt-injection attacks.
 
-**Status:** early development (Week 2 of 8). Setup, project structure, labeling guide and project brief are complete. Dataset collection is next. Models are not trained yet.
+**Status:** early development (Week 4 of 8). Dataset and baseline models are complete. A transformer model is next.
 
 ## Why this project
 
@@ -50,12 +50,25 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 - [x] Labeling guide and seed examples
 - [x] README and project brief
 - [X] Dataset collection and cleaning (Week 2)
-- [ ] Baseline models and evaluation (Week 3)
+- [x] Baseline models and evaluation (Week 3)
 - [ ] Transformer model and explainability (Week 4)
 - [ ] API and web app (Week 5)
 - [ ] Agent action guard (Weeks 6-7)
 - [ ] Red-team loop and hardening (Weeks 7-8)
 
+## Results (baseline, Week 3)
+
+Model: (your model name). Trained on the training split only. Scores come from `src/make_results_table.py`.
+
+(paste the contents of docs/results_table.md here)
+
+How to read this:
+- **Test** is mostly public data in a familiar style, so it is the easiest set.
+- **Hard set** and **own rows** are hand-written, with fewer obvious keywords, and are the more realistic measures.
+- The **95% range** comes from bootstrapping. Small sets (hard set, own rows, Hinglish and Tanglish) have wide ranges, so single numbers there are uncertain.
+- Missed attacks and false alarms are analysed in [docs/ERRORS.md](docs/ERRORS.md).
+
+A transformer model and a more diverse dataset are planned for Weeks 4-5. These are baseline results, not a finished product.
 
 ## Limitations
 
