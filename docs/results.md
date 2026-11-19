@@ -37,3 +37,22 @@ Observations:
 
 Chosen baseline: (model name) because (reason: score, recall, simplicity).
 Notes: (what surprised you; whether differences are bigger than noise)
+
+## Week 3, Day 4: final scores (chosen model: (name))
+
+| Set | Rows | Macro F1 | 95% range |
+|---|---|---|---|
+| Validation | (n) | (n) | - |
+| Test | (n) | (n) | (n) to (n) |
+| Hard | (n) | (n) | (n) to (n) |
+| Own rows only (test + hard) | (n) | (n) | (n) to (n) |
+
+Recall by true label (test + hard): safe (n), scam (n), prompt_injection (n)
+
+By language: english (n rows, accuracy n), hinglish (n rows, accuracy n), tamil_translit (n rows, accuracy n)
+
+Observations:
+- Gap between test and hard: (n points), meaning (your interpretation)
+- Model is weakest on: (label / language / source)
+- Languages with too few rows to measure: (list)
+- No changes were made to the model after seeing these scores: (yes / describe)
