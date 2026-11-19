@@ -35,8 +35,12 @@ Observations:
 | (best SVM) | (n) | (n) | (n) | (n) | (n) | (n) |
 | (best LR) | (n) | (n) | (n) | (n) | (n) | (n) |
 
-Chosen baseline: (model name) because (reason: score, recall, simplicity).
-Notes: (what surprised you; whether differences are bigger than noise)
+Chosen baseline: svm | word+char | C=0.3 (macro F1 0.948 on val).
+Best on val was svm | char | C=1 (0.956); the top five models are within 0.01, which is
+within noise (42 injection rows in val). lr | word+char | C=3 had the best attack recall
+(scam 0.98, injection 0.95) and would have been preferred by my tie-break rule. I kept the
+SVM because I had already evaluated it on the test and hard sets, and switching after seeing
+those scores would weaken the test set. The learned models beat the keyword rules by a wide margin.)
 
 ## Week 3, Day 4: final scores (chosen model: (name))
 
@@ -83,3 +87,5 @@ Most dangerous misses (attacks labeled safe): (n); examples: (short descriptions
 - predict.analyze(text) returns verdict, score, label, probabilities and top_features
 - Provisional thresholds: attack 0.50, suspicious 0.25 (to be tuned in Week 5)
 - Manual check of (n) messages: (how many looked right; list the surprises)
+
+On the test split (mostly public data), the baseline reaches macro F1 0.93 (95% range 0.90 to 0.96). On a small hand-written hard set (26 rows, written without obvious keywords) it reaches 0.63 (range 0.40 to 0.81). Hinglish and Tanglish have only 8 rows each, so they cannot be measured yet. The keyword-rules baseline scores 0.33 on the test split.
