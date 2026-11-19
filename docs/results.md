@@ -56,3 +56,21 @@ Observations:
 - Model is weakest on: (label / language / source)
 - Languages with too few rows to measure: (list)
 - No changes were made to the model after seeing these scores: (yes / describe)
+
+## Week 3, Day 5: error analysis
+
+Mistakes reviewed: (n) from the test set, (n) from the hard set.
+
+| Cause | Test | Hard | Example number |
+|---|---|---|---|
+| label_noise | (n) | (n) | (e.g. test 3) |
+| no_keywords | (n) | (n) | |
+| disguised | (n) | (n) | |
+| language | (n) | (n) | |
+| style_fingerprint | (n) | (n) | |
+| scam_words_honest | (n) | (n) | |
+| ambiguous | (n) | (n) | |
+| other | (n) | (n) | |
+
+Most common wrong prediction (true -> predicted): (e.g. scam -> safe, n times)
+Most dangerous misses (attacks labeled safe): (n); examples: (short descriptions)
