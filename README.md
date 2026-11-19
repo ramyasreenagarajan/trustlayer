@@ -60,6 +60,7 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 ## Limitations
 
 TrustLayer gives guidance, not guarantees. Detection can miss attacks or flag safe messages. Results, datasets and known weaknesses will be documented here as the project progresses. 
+See [docs/ERRORS.md](docs/ERRORS.md) for the baseline model's measured weaknesses.
 
 ## Privacy
 
