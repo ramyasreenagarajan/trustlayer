@@ -74,3 +74,12 @@ Mistakes reviewed: (n) from the test set, (n) from the hard set.
 
 Most common wrong prediction (true -> predicted): (e.g. scam -> safe, n times)
 Most dangerous misses (attacks labeled safe): (n); examples: (short descriptions)
+
+## Week 3, Day 6: saved baseline
+
+- Model saved as models/trustlayer_v0.joblib (not in Git; see model_card.json)
+- Config: (algo | features | C), trained on train + val ((n) rows)
+- Sanity macro F1 on test: (n) (Day 4 score: (n))
+- predict.analyze(text) returns verdict, score, label, probabilities and top_features
+- Provisional thresholds: attack 0.50, suspicious 0.25 (to be tuned in Week 5)
+- Manual check of (n) messages: (how many looked right; list the surprises)

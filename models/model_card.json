@@ -1,0 +1,20 @@
+{
+  "name": "trustlayer_v0",
+  "date": "2026-11-19",
+  "algo": "svm",
+  "features": "word+char",
+  "C": 0.3,
+  "classes": [
+    "prompt_injection",
+    "safe",
+    "scam"
+  ],
+  "trained_on_rows": 1668,
+  "trained_on_splits": [
+    "train",
+    "val"
+  ],
+  "sklearn_version": "1.9.1",
+  "sanity_test_macro_f1": 0.942,
+  "note": "Baseline. Scores per set are in docs/results.md. Thresholds in predict.py are provisional."
+}
