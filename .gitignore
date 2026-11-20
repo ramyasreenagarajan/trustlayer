@@ -227,3 +227,5 @@ data/processed/*
 
 models/*.joblib
 !models/.gitkeep
+
+data/audit/*
