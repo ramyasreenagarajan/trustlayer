@@ -98,3 +98,10 @@ Validation macro F1 by epoch: (n), (n), (n), (n). Best epoch: (n).
 Per label F1: safe (n), scam (n), prompt_injection (n).
 Baseline (TF-IDF + SVM, same data) validation macro F1: (n).
 Training time: about (n) minutes on (GPU name).
+
+## Week 4, Day 5: explanations
+
+- Warning signs: (n) rules, written by hand (English, Hinglish, Tanglish). Influential words come from removing each word and measuring the change in risk. Advice is template text. No message is sent to any outside service.
+- Share of rows with at least one strong sign (test + hard): scam (n)%, prompt_injection (n)%, safe (n)%
+- Spot check of 15 flagged rows: evidence correct in (n) of 15
+- Known gaps: (e.g. no rules for German/Spanish injections; story scams without money words)
