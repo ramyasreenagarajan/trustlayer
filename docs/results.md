@@ -89,3 +89,12 @@ Most dangerous misses (attacks labeled safe): (n); examples: (short descriptions
 - Manual check of (n) messages: (how many looked right; list the surprises)
 
 On the test split (mostly public data), the baseline reaches macro F1 0.93 (95% range 0.90 to 0.96). On a small hand-written hard set (26 rows, written without obvious keywords) it reaches 0.63 (range 0.40 to 0.81). Hinglish and Tanglish have only 8 rows each, so they cannot be measured yet. The keyword-rules baseline scores 0.33 on the test split.
+
+## Week 4, Day 3: transformer v1 (validation set only)
+
+Model: distilbert-base-multilingual-cased, 4 epochs, learning rate 2e-5, batch 16, max length 128, class-weighted loss.
+Trained on the audited train split ((n) rows). Test and hard sets not used.
+Validation macro F1 by epoch: (n), (n), (n), (n). Best epoch: (n).
+Per label F1: safe (n), scam (n), prompt_injection (n).
+Baseline (TF-IDF + SVM, same data) validation macro F1: (n).
+Training time: about (n) minutes on (GPU name).

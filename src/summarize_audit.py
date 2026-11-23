@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data/audit/audit_sample.csv", encoding="utf-8-sig")
+df = pd.read_csv("data/audit/audit_sample.csv", encoding="utf-8-sig", dtype=str)
 df["decision"] = df["decision"].fillna("").astype(str).str.strip().str.lower()
 
 empty = (df["decision"] == "").sum()
