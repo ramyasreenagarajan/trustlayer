@@ -25,9 +25,10 @@ def load_own(p):
 
 own = pd.concat([load_own(p) for p in own_files], ignore_index=True)
 
-sms = pd.read_csv(PROC / "sms_clean.csv")
-ds = pd.read_csv(PROC / "deepset_clean.csv")
-
+sms = pd.read_csv(PROC / "sms_audited.csv")
+ds = pd.read_csv(PROC / "deepset_audited.csv")
+for _d in (sms, ds):
+    _d["language"] = _d["language"].where(_d["language"].isin({"english", "german"}), "other_or_unknown")
 # ---------- 2. Downsample SMS 'safe' ----------
 sms_safe = sms[sms["label"] == "safe"]
 sms_safe = sms_safe.sample(n=min(SMS_SAFE_CAP, len(sms_safe)), random_state=SEED)
