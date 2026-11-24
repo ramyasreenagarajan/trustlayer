@@ -105,3 +105,13 @@ Training time: about (n) minutes on (GPU name).
 - Share of rows with at least one strong sign (test + hard): scam (n)%, prompt_injection (n)%, safe (n)%
 - Spot check of 15 flagged rows: evidence correct in (n) of 15
 - Known gaps: (e.g. no rules for German/Spanish injections; story scams without money words)
+
+## Week 4, Day 6: model for the API
+
+Decision rule (written before comparing):
+1. If hard-set and own-row ranges overlap heavily for all models, there is no evidence of a difference, so serve the smaller and faster model (TF-IDF + SVM).
+2. Serve a transformer only if it is clearly better on missed attacks on the hard set and own rows (not worse on test), and its CPU latency is under about 1 second per message.
+3. Explanations (warning signs, influential words) always come from rules and the TF-IDF model, so they stay fast and checkable.
+
+Evidence: hard macro F1 tfidf (n), distilbert (n), muril (n); own-row macro F1 (n), (n), (n); missed attacks on test+hard (n), (n), (n); size and latency: (n).
+Decision: (model), because (reason).
