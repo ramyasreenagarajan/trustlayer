@@ -14,3 +14,17 @@
 | english | 306 | 0.93 |  |
 | hinglish | 8 | 0.50 | too few rows to trust |
 | tamil_translit | 8 | 0.75 | too few rows to trust |
+
+## Results (Week 4)
+
+Measured on splits made after a label audit of the public data ([docs/AUDIT.md](docs/AUDIT.md)). All three models were trained on the same training split and scored on the same data. These numbers are not comparable with the earlier baseline in [docs/results_table_v1_before_audit.md](docs/results_table_v1_before_audit.md), which used different splits.
+
+(paste the contents of docs/results_table.md here)
+
+How to read this:
+- **Test** is mostly public data, so it is the easiest set.
+- **Hard set** (hand-written, often without obvious keywords) and **own rows** are the more realistic measures. They are small, so their 95% ranges are wide.
+- Hinglish and Tanglish have too few rows to measure, so no model can be said to handle them.
+- (write ONE sentence that matches your table, see the options below)
+
+The API serves (model name), chosen by a rule written before the comparison ([docs/results.md](docs/results.md)).

@@ -23,6 +23,7 @@ See [labeling_guide.md](labeling_guide.md). Short version:
 - Collapsed extra whitespace
 - Relabeled to the three TrustLayer labels
 - Sampled 600 of the SMS `safe` rows to reduce imbalance (all SMS `scam` rows kept)
+-dropped rows that did not match my label definitions (see AUDIT.md) and detected languages automatically
 
 ## Final size
 - Total rows: (n)
@@ -55,6 +56,7 @@ Raw public files are not stored in this repository. To rebuild:
 - Hard set is small (n rows), so each prediction moves a score by several percentage points.
 - Injection and safe "twin" pairs may fall in different splits, which can make the test set slightly easier.
 - Own examples were written by one person, so they reflect one writer's style.
+-Public language labels come from an automatic detector. Hinglish, Tanglish and short messages are often mislabelled.
 
 ## Privacy and ethics
 - All own examples use invented names, numbers, links and addresses.

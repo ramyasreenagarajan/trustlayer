@@ -2,7 +2,7 @@
 
 An open-source toolkit that helps protect people and AI assistants from scam messages and hidden prompt-injection attacks.
 
-**Status:** early development (Week 4 of 8). Dataset and baseline models are complete. A transformer model is next.
+Status: early development (Week 5 of 8). Dataset, audited labels, baseline and transformer comparison, and explanations are complete. The web API and deployment are next.
 
 ## Why this project
 
@@ -51,7 +51,7 @@ Python, scikit-learn, Hugging Face Transformers, FastAPI, HTML/CSS/JavaScript. A
 - [x] README and project brief
 - [X] Dataset collection and cleaning (Week 2)
 - [x] Baseline models and evaluation (Week 3)
-- [ ] Transformer model and explainability (Week 4)
+- [x] Transformer model and explainability (Week 4)
 - [ ] API and web app (Week 5)
 - [ ] Agent action guard (Weeks 6-7)
 - [ ] Red-team loop and hardening (Weeks 7-8)
@@ -74,6 +74,10 @@ A transformer model and a more diverse dataset are planned for Weeks 4-5. These 
 
 TrustLayer gives guidance, not guarantees. Detection can miss attacks or flag safe messages. Results, datasets and known weaknesses will be documented here as the project progresses. 
 See [docs/ERRORS.md](docs/ERRORS.md) for the baseline model's measured weaknesses.
+
+## How explanations work
+
+Each result lists: (1) warning signs found by hand-written rules, with the matching words quoted; (2) words that raised the risk score most, found by removing words one at a time; and (3) advice text for the verdict. If the model flags a message but no rule fires, the tool says so instead of inventing a reason. Nothing is sent to any outside service. The rules are tested in tests/test_explain.py, and their known gaps (for example German or Spanish injections and Hinglish or Tanglish scams) are listed in docs/ERRORS.md.
 
 ## Privacy
 
