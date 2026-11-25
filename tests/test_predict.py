@@ -5,8 +5,8 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-pytestmark = pytest.mark.skipif(
-    not (ROOT / "models" / "trustlayer_v0.joblib").exists(),
+pytestmark = pytest.mark.skipif( 
+    not (ROOT / "models" / "deploy" / "model.joblib").exists(),
     reason="model not trained yet (run: py src/train_final.py)",
 )
 

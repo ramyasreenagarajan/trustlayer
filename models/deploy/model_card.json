@@ -1,0 +1,22 @@
+{
+  "name": "trustlayer-tfidf-svm",
+  "date": "2026-11-25",
+  "trained_on_rows": 1473,
+  "trained_on_splits": [
+    "train",
+    "val"
+  ],
+  "classes": [
+    "prompt_injection",
+    "safe",
+    "scam"
+  ],
+  "features": "word 1-2 grams + character 2-5 grams, TF-IDF",
+  "classifier": "LinearSVC C=0.3, class_weight=balanced, sigmoid calibration (5-fold)",
+  "file_size_mb": 2.7,
+  "python": "3.12.4",
+  "scikit_learn": "1.9.1",
+  "numpy": "2.5.4",
+  "data_credits": "SMS Spam Collection (CC BY 4.0), deepset/prompt-injections (Apache 2.0), own examples (CC BY 4.0)",
+  "note": "Scores are in docs/results.md. Thresholds are in thresholds.json."
+}

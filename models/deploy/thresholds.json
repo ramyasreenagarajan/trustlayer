@@ -1,0 +1,5 @@
+{
+  "t_suspicious": 0.375,
+  "t_attack": 0.575,
+  "tuned_on": "validation rows, scores from a model trained on the train split only"
+}

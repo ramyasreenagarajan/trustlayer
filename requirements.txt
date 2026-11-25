@@ -11,3 +11,7 @@
    pytest
    pyarrow
    langdetect
+   slowapi
+   httpx
+   psutil
+   

@@ -115,3 +115,11 @@ Decision rule (written before comparing):
 
 Evidence: hard macro F1 tfidf (n), distilbert (n), muril (n); own-row macro F1 (n), (n), (n); missed attacks on test+hard (n), (n), (n); size and latency: (n).
 Decision: (model), because (reason).
+
+## Week 5, Day 2: alert thresholds
+
+Rule (written before looking at the numbers):
+- risk = 1 minus the model's probability of "safe".
+- T_SUSPICIOUS = the highest threshold at which at least 95% of validation attacks are flagged.
+- T_ATTACK = the lowest threshold at which at least 95% of flagged validation rows are real attacks, but never less than T_SUSPICIOUS + 0.2 (so a middle "Suspicious" band always exists) and never above 0.95.
+- Thresholds are chosen on validation rows only, using a model trained on the train split only. Test and hard are reported once and never used to adjust anything.

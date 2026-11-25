@@ -1,6 +1,6 @@
 {
   "name": "trustlayer_v0",
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "algo": "svm",
   "features": "word+char",
   "C": 0.3,
