@@ -229,3 +229,5 @@ models/*.joblib
 !models/.gitkeep
 
 data/audit/*
+
+testenv/
