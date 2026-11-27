@@ -20,7 +20,7 @@ SAFE = "Hi, your order #4821 will arrive tomorrow between 2 and 5 PM. Reply 1 to
 
 def test_output_has_expected_fields():
     r = analyze(SCAM)
-    for key in ["verdict", "score", "label", "probabilities", "top_features"]:
+    for key in ["verdict", "score", "label", "probabilities", "signs", "advice"]:
         assert key in r
 
 
