@@ -1,22 +1,97 @@
 text,label,language,source
-"Your PAN is not linked. Account will be frozen in 24 hrs. Verify now: bit.ly/pan-verify-27",scam,english,own
-"Congratulations! You are selected for a Rs 2,00,000 lucky draw. Pay Rs 299 processing fee to UPI id claim.prize@upi to receive your prize.",scam,english,own
-"Your parcel is held at customs. Pay Rs 85 clearance charge here to release it: tinyurl.com/clr-parcel-3",scam,english,own
-"Hello, we are hiring for work from home data entry. Earn Rs 800 per day. Registration fee Rs 450. Reply YES on WhatsApp +91 90000 12345.",scam,english,own
-"Aapka bijli bill update nahi hua hai. Aaj raat 9:30 baje connection kat jayega. Turant call karein +91 90000 23456.",scam,hinglish,own
-"Aapne Rs 5,000 ka cashback jeeta hai. Paisa lene ke liye apna UPI PIN yahan daalein: bit.ly/cashback-91",scam,hinglish,own
-"Ungal bank account block aagapogudhu. KYC update seyya inge click pannunga: bit.ly/kyc-tn-44",scam,tamil_translit,own
-"Amma, naan puthu number la irukken. Konjam urgent ah Rs 5,000 anuppu, naalaiku thirumba tharen.",scam,tamil_translit,own
-"Dear customer, your SBI account will be blocked today. Update KYC immediately: bit.ly/sbi-kyc-upd",scam,english
-"Your UPI refund of Rs 4,850 is pending. Click tinyurl.com/upi-rfnd-00 and enter your PIN to receive the money.",scam,english
-"Part-time job: earn Rs 3,000 daily from home. Pay Rs 499 registration fee to start. WhatsApp +91 90000 00000.",scam,english
-"Congratulations! You have won a Rs 50,000 lottery. Pay Rs 1,000 processing charges to claim your prize.",scam,english
-"Your electricity bill is overdue. Your connection will be disconnected tonight. Pay immediately using this link: bit.ly/power-pay.",scam,english
-"Your bank account has been temporarily suspended. Share your OTP to reactivate it immediately.",scam,english
-"Dear user, your parcel is on hold due to an incomplete address. Pay Rs 25 to release your delivery: tinyurl.com/parcel-fix.",scam,english
-"Earn Rs 5,000 daily by liking videos. Deposit Rs 799 to activate your work account.",scam,english
-"Your credit card reward points are expiring today. Click here to redeem them: bit.ly/card-reward.",scam,english
-"Your FASTag will be blocked within 2 hours. Update your payment details immediately.",scam,english
-"Congratulations! Aapka bank account block ho jayega. OTP share karo immediately: bit.ly/verify-bank.",scam,hinglish
-"Ungal account block aagum. Immediate-ah KYC update pannunga: bit.ly/kyc-upd-tn",scam,tamil_translit
-"Ungalukku Rs 25,000 prize kidaichirukku. Claim panna mudhalil Rs 500 registration fee pay pannunga.",scam,tamil_translit
+"Your Aadhaar card will be deactivated today. Complete verification immediately: bit.ly/aadhaar-check-82",scam,english,own
+"Your bank KYC has expired. Send your account number and OTP to avoid permanent suspension.",scam,english,own
+"Your income tax refund of Rs 12,500 is ready. Verify your bank details here: tinyurl.com/tax-refund-19",scam,english,own
+"Congratulations! You have been selected for a free iPhone. Pay Rs 199 delivery charges to claim it.",scam,english,own
+"Your credit card has been blocked due to suspicious activity. Call this number immediately: +91 90000 34567.",scam,english,own
+"Your electricity connection will be disconnected within 30 minutes. Pay your pending bill here: bit.ly/electricity-92",scam,english,own
+"Your bank account received Rs 75,000. Pay Rs 500 verification charges to release the amount.",scam,english,own
+"Work from home opportunity! Earn Rs 4,000 daily by completing simple online tasks. Pay Rs 299 to register.",scam,english,own
+"Your debit card will expire today. Update your card details immediately at bit.ly/card-renew-55",scam,english,own
+"Your mobile SIM will be permanently deactivated tonight. Complete KYC using this link: tinyurl.com/sim-kyc-8",scam,english,own
+"Your parcel delivery is unsuccessful. Pay Rs 40 redelivery charges to receive your package: bit.ly/delivery-48",scam,english,own
+"You have won Rs 1,00,000 in our customer reward programme. Send your bank details to claim the prize.",scam,english,own
+"Your UPI account has been suspended. Enter your UPI PIN at bit.ly/upi-reactivate to restore access.",scam,english,own
+"Your FASTag balance is negative. Pay Rs 100 immediately to avoid vehicle penalties: tinyurl.com/fastag-71",scam,english,own
+"Your bank account is under investigation. Share your OTP with our verification officer immediately.",scam,english,own
+"Congratulations! You have been selected for a government subsidy of Rs 25,000. Pay Rs 350 application charges.",scam,english,own
+"Your PAN card details are incorrect. Update your information immediately to avoid income tax penalties.",scam,english,own
+"Your online shopping refund is pending. Share your card number and CVV to receive the amount.",scam,english,own
+"Earn Rs 10,000 weekly by reviewing products online. Deposit Rs 999 to unlock premium tasks.",scam,english,own
+"Your bank account will be frozen due to incomplete verification. Click bit.ly/account-safe-31 now.",scam,english,own
+"Your LPG subsidy of Rs 3,500 is pending. Verify your bank account using this link: tinyurl.com/lpg-pay-7",scam,english,own
+"Your insurance policy bonus of Rs 45,000 is ready. Pay Rs 750 processing fees to receive it.",scam,english,own
+"Your ATM card has been blocked. Call our customer care number +91 90000 45678 and provide your PIN.",scam,english,own
+"Congratulations! You have been selected for a foreign job opportunity. Pay Rs 2,000 visa processing charges today.",scam,english,own
+"Your loan application has been approved for Rs 5 lakh. Pay an advance fee of Rs 1,500 to release the money.",scam,english,own
+"Your Netflix subscription will be cancelled today. Update your payment details here: bit.ly/netflix-renew-9",scam,english,own
+"Your Google account has been compromised. Verify your password immediately at tinyurl.com/google-secure-2",scam,english,own
+"Your mobile number has won a Rs 10 lakh lucky draw. Contact our agent and pay the registration fee.",scam,english,own
+"Your bank has detected an unusual transaction. Share your OTP immediately to cancel the payment.",scam,english,own
+"Your railway ticket refund is waiting. Enter your UPI PIN to receive Rs 2,450: bit.ly/rail-refund-6",scam,english,own
+"Your Amazon order is on hold. Pay Rs 99 to confirm delivery using this link: tinyurl.com/order-confirm-8",scam,english,own
+"Your vehicle challan is overdue. Pay Rs 500 immediately to avoid legal action: bit.ly/traffic-fine-22",scam,english,own
+"Your bank reward points have expired. Click here and enter your card details to redeem them.",scam,english,own
+"Your salary account will be blocked unless you update your KYC details within two hours.",scam,english,own
+"Congratulations! You have received a free holiday package. Pay Rs 1,200 booking charges to confirm your trip.",scam,english,own
+"Your electricity meter is showing irregular readings. Call our technician and pay the inspection fee immediately.",scam,english,own
+"Your PF withdrawal request is approved. Pay Rs 450 verification fees to transfer the amount.",scam,english,own
+"Your WhatsApp account will be deleted today. Verify your number and OTP at bit.ly/whatsapp-check-5",scam,english,own
+"Your credit score is eligible for a Rs 10 lakh loan. Pay Rs 299 to unlock your loan offer.",scam,english,own
+"Your bank has introduced a new security update. Share your login credentials to activate it.",scam,english,own
+"Your scholarship application has been selected. Pay Rs 600 confirmation charges to receive the scholarship.",scam,english,own
+"Your courier contains restricted items. Pay Rs 1,000 customs clearance fees to avoid police action.",scam,english,own
+"Your UPI payment failed but money was deducted. Call +91 90000 56789 and share your OTP for a refund.",scam,english,own
+"Your SIM card will stop working in 2 hours. Send your Aadhaar number and OTP for immediate activation.",scam,english,own
+"Earn Rs 2,500 daily by watching advertisements. Pay Rs 399 to activate your earning account.",scam,english,own
+"Your bank statement is under review. Click this link to prevent account suspension: bit.ly/statement-verify-4",scam,english,own
+"Your insurance maturity amount of Rs 80,000 is ready. Pay Rs 900 tax charges to receive your payment.",scam,english,own
+"Your shopping account has been selected for a special cashback offer. Enter your card PIN to claim Rs 5,000.",scam,english,own
+"Your account has been accessed from an unknown device. Share your password with our security team immediately.",scam,english,own
+"Congratulations! You have been selected for a government job without an examination. Pay Rs 3,000 registration fees.",scam,english,own
+"Your bank account will be permanently closed today. Complete your verification through bit.ly/bank-update-63",scam,english,own
+"Your electricity bill payment has failed. Pay Rs 25 immediately to avoid disconnection: tinyurl.com/bill-fix-3",scam,english,own
+"Your online investment has generated Rs 30,000 profit. Pay Rs 1,000 withdrawal charges to access your money.",scam,english,own
+"Your courier delivery address is incorrect. Share your Aadhaar number to update the delivery details.",scam,english,own
+"Your credit card limit has increased to Rs 5 lakh. Click here and enter your CVV to activate the offer.",scam,english,own
+"Your pension payment is on hold due to incomplete verification. Send your bank details to release it.",scam,english,own
+"Your mobile recharge has been reversed. Enter your UPI PIN at bit.ly/recharge-refund-4 to receive your money.",scam,english,own
+"Congratulations! You have been selected for a free laptop. Pay Rs 499 shipping and handling charges.",scam,english,own
+"Your bank account has received a suspicious transfer. Call our verification agent and share your OTP.",scam,english,own
+"Your online shopping account is suspended. Verify your password and payment details immediately.",scam,english,own
+"Your vehicle insurance is expired. Pay Rs 199 renewal charges through this link to avoid penalties.",scam,english,own
+"Your loan repayment is overdue. Pay Rs 750 immediately using this personal UPI ID to avoid arrest.",scam,english,own
+"Your Aadhaar-linked bank account requires reactivation. Submit your OTP and PIN to complete the process.",scam,english,own
+"Your lottery prize of Rs 5 lakh is confirmed. Pay Rs 2,500 tax charges before collecting the amount.",scam,english,own
+"Your courier is stuck at the delivery centre. Pay Rs 50 immediately using bit.ly/courier-release-5",scam,english,own
+"Your social media account will be permanently deleted. Enter your password to verify ownership: tinyurl.com/account-restore-6",scam,english,own
+"Aapka bank account aaj block ho jayega. KYC update karne ke liye abhi link open karo: bit.ly/kyc-check-8",scam,hinglish,own
+"Aapne Rs 10,000 ka cashback jeeta hai. Claim karne ke liye Rs 299 processing fee bhejo.",scam,hinglish,own
+"Bijli bill pending hai. Aaj payment nahi kiya toh connection cut ho jayega. Is number par call karo: +91 90000 67890",scam,hinglish,own
+"Aapka parcel customs mein atka hua hai. Delivery ke liye Rs 100 clearance charge pay karo: tinyurl.com/parcel-11",scam,hinglish,own
+"Ghar baithe daily Rs 4,000 kamao. Registration ke liye pehle Rs 499 deposit karo.",scam,hinglish,own
+"Aapka ATM card deactivate ho jayega. Card number aur OTP WhatsApp par bhejo.",scam,hinglish,own
+"Aapke naam par Rs 5 lakh ka loan approve hua hai. Processing fee Rs 1,200 abhi pay karo.",scam,hinglish,own
+"Free iPhone jeetne ka golden chance! Prize claim karne ke liye Rs 199 delivery charge bhejo.",scam,hinglish,own
+"Aapka FASTag band hone wala hai. Turant payment details update karo: bit.ly/fastag-update-4",scam,hinglish,own
+"Aapka PAN card verify nahi hua hai. Account freeze hone se bachne ke liye OTP share karo.",scam,hinglish,own
+"Online task complete karke daily Rs 3,000 kamao. Account activate karne ke liye Rs 599 pay karo.",scam,hinglish,own
+"Aapka mobile number lucky draw mein select hua hai. Rs 25,000 receive karne ke liye registration fee do.",scam,hinglish,own
+"Aapka electricity connection 30 minutes mein cut ho jayega. Bill payment ke liye is link par click karo: bit.ly/power-33",scam,hinglish,own
+"Aapka UPI refund pending hai. Paisa receive karne ke liye apna UPI PIN enter karo.",scam,hinglish,own
+"Aapke account mein suspicious transaction hua hai. Transaction cancel karne ke liye OTP batao.",scam,hinglish,own
+"Ungal Aadhaar card deactivate aagapogudhu. Udane details verify pannunga: bit.ly/aadhaar-tn-9",scam,tamil_translit,own
+"Ungalukku Rs 10,000 cashback kidaichirukku. Claim panna Rs 300 processing fee anuppunga.",scam,tamil_translit,own
+"Ungal EB bill pending-la irukku. Innaiku pay pannalana current connection cut aagidum. Indha number-ku call pannunga: +91 90000 78901",scam,tamil_translit,own
+"Veetla irundhe daily Rs 3,500 sambathikkalam. Register panna mudhalil Rs 499 deposit pannunga.",scam,tamil_translit,own
+"Ungal parcel customs-la hold pannirukanga. Release panna Rs 150 clearance charge pay pannunga: tinyurl.com/tn-parcel-2",scam,tamil_translit,own
+"Ungal ATM card block aagapogudhu. Card number-um OTP-yum WhatsApp-la anuppunga.",scam,tamil_translit,own
+"Ungalukku government scholarship approve aagiyirukku. Amount receive panna Rs 500 registration fee pay pannunga.",scam,tamil_translit,own
+"Ungal mobile SIM innaiku deactivate aagum. KYC update panna OTP share pannunga.",scam,tamil_translit,own
+"Rs 5 lakh loan unga peyar-la approve aagiyirukku. Amount release panna Rs 1,000 fee anuppunga.",scam,tamil_translit,own
+"Free mobile phone prize ungalukku kidaichirukku. Delivery-ku Rs 250 pay pannunga.",scam,tamil_translit,own
+"Ungal bank account-la suspicious transaction nadandhirukku. Cancel panna OTP sollunga.",scam,tamil_translit,own
+"Online task pannitu daily Rs 2,000 earn pannalam. Account activate panna Rs 399 deposit pannunga.",scam,tamil_translit,own
+"Ungal FASTag balance negative-la irukku. Udane Rs 200 pay pannalana vehicle penalty varum.",scam,tamil_translit,own
+"Ungal pension amount hold-la irukku. Release panna bank account details anuppunga.",scam,tamil_translit,own
+"Lottery-la Rs 50,000 prize win pannirukeenga. Amount receive panna Rs 750 tax pay pannunga.",scam,tamil_translit,own

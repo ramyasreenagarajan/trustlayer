@@ -1,23 +1,92 @@
 text,label,language,source
-"Rs 1,200 was debited from your account ending 4821 on 12 Nov. If this was not you, call the number on the back of your card.",safe,english,own
-"Your OTP for the online order is 482913. Never share this code, including with our staff. Valid for 5 minutes.",safe,english,own
-"Your order #5532 has been shipped and will arrive on Thursday. Track it in the app under My Orders.",safe,english,own
-"Hi team, the Q3 report is attached. Please review before Friday and send comments by Monday.",safe,english,own
-"Reminder: your electricity bill of Rs 842 is due on 20 Nov. You can pay on the official website or app. No action needed if already paid.",safe,english,own
-"Our new AI assistant feature launches next week. It can summarize your emails. You can turn it off anytime in Settings.",safe,english,own
-"Your monthly statement is ready. Log in to the official app to view it. We will never ask for your PIN or OTP.",safe,english,own
-"Kal ki meeting 11 baje shift ho gayi hai. Agenda same hai, conference room B mein milte hain.",safe,hinglish,own
-"Naalaiku evening 6 manikku practice irukku. Ellarum time-ku vandhudunga.",safe,tamil_translit,own
-"Hi, your order #4821 will arrive tomorrow between 2 and 5 PM. Reply 1 to reschedule.",safe,english
-"Rs 1,200 was debited from your account ending 4821 on 12 Nov. If this was not you, call the number on the back of your card.",safe,english
-"123456 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.",safe,english
-"Your appointment has been confirmed for Monday at 11 AM. Please arrive 10 minutes early.",safe,english
-"Thank you for attending today's meeting. The presentation slides are attached for your reference.",safe,english
-"Aapka electricity bill successfully pay ho gaya hai. Payment confirmation message save kar lena.",safe,hinglish
-"Kal ki meeting 11 baje shift ho gayi hai. Conference room B mein milte hain.",safe,hinglish
-"Aapka mobile recharge successfully complete ho gaya hai. Validity 28 days hai.",safe,hinglish
-"Naalaiku evening 6 mani ku match irukku. Ellarum ready ah irungal.",safe,tamil_translit
-"Ungal order nalaiku delivery aagum. Delivery person ungalai phone-la contact pannuvaar.",safe,tamil_translit
-"Hi all, the project review has moved to Thursday at 3 PM in Lab 2. Please bring your updated report and the demo laptop. If you cannot attend, message me before Wednesday evening so I can reschedule your slot. Thanks, Priya.",safe,english,own
-"Dear students, the library will remain open until 9 PM during exam week. Please carry your ID card at the entrance. Silent study rooms can be booked on the college portal. Books due this week can be renewed online without a fine.",safe,english,own
-"Your electricity bill for October is Rs 842 and is due on 20 Nov. You can pay through the official app or website. If you have already paid, please ignore this message. Contact the customer care number printed on your bill for any queries.",safe,english,own
+"Your salary of Rs 32,500 has been credited to your registered bank account. Please check your official banking app for details.",safe,english,own
+"Your debit card ending 6721 was used for a purchase of Rs 850 at a registered merchant. Contact your bank through the official app if you do not recognise it.",safe,english,own
+"Your fixed deposit will mature on 15 December. Please visit your bank branch or official website to review the available renewal options.",safe,english,own
+"Your monthly electricity bill is Rs 1,240. The due date is 28 November. You can view the complete bill through the electricity board's official website.",safe,english,own
+"Your UPI payment of Rs 650 to Green Mart was successful. Transaction ID: UPI829451.",safe,english,own
+"Your bank statement for October is ready. Open the official mobile banking application and select Statements to download it.",safe,english,own
+"Your ATM withdrawal of Rs 2,000 was successful. Your remaining account balance is available through the official banking app.",safe,english,own
+"Your recurring deposit instalment was successfully processed today. Thank you for banking with us.",safe,english,own
+"Your credit card payment of Rs 3,450 has been received. Your updated outstanding balance is available in the banking app.",safe,english,own
+"Your account security alert is enabled. You will receive notifications whenever a transaction is completed using your registered account.",safe,english,own
+"Your order #7612 has been packed and handed over to the delivery partner. Expected delivery is Friday.",safe,english,own
+"Your grocery order has been delivered successfully. Thank you for shopping with Fresh Basket.",safe,english,own
+"Your return request for order #4521 has been accepted. The pickup executive will contact you tomorrow.",safe,english,own
+"Your replacement product has been dispatched. You can check the delivery status under the My Orders section.",safe,english,own
+"Your appointment at City Dental Clinic is confirmed for Tuesday at 4 PM. Please arrive 15 minutes early.",safe,english,own
+"Your hotel reservation is confirmed for two guests from 12 December to 15 December. The booking details are available in your account.",safe,english,own
+"Your train ticket from Chennai to Coimbatore is confirmed. Please check your official booking account for coach and seat information.",safe,english,own
+"Your flight booking has been confirmed. The departure time is 8:30 AM on Saturday. Please review the airline's baggage guidelines before travelling.",safe,english,own
+"Your food delivery order has been accepted by the restaurant. The estimated arrival time is 35 minutes.",safe,english,own
+"Your movie tickets have been booked successfully for the 7 PM show. Please carry your booking confirmation.",safe,english,own
+"Hi team, tomorrow's project meeting has been moved to 2 PM. Please update your calendars and bring the latest progress report.",safe,english,own
+"Dear colleagues, the office will remain closed on Friday due to scheduled maintenance. Normal operations will resume on Monday.",safe,english,own
+"Please ignore the previous version of the spreadsheet. I have corrected the formulas and attached the updated file.",safe,english,own
+"Hi everyone, the department head has requested an updated attendance report by Thursday afternoon. Please submit your entries before the deadline.",safe,english,own
+"The Q4 planning document is available in the shared project folder. Please review your assigned sections and add comments where necessary.",safe,english,own
+"Dear students, the internal assessment examination will begin at 9 AM next Monday. Please bring your college identity card.",safe,english,own
+"The university library will remain open until 8 PM this week. Students can renew borrowed books through the student portal.",safe,english,own
+"Your assignment submission was successful. The submitted document is available in the coursework section of your student account.",safe,english,own
+"Your examination hall ticket is now available for download. Please verify your name, registration number and examination centre.",safe,english,own
+"Congratulations on completing the training programme. Your participation certificate is now available in the learning portal.",safe,english,own
+"Your interview has been scheduled for Wednesday at 10:30 AM. Please join the video meeting five minutes before the scheduled time.",safe,english,own
+"Thank you for applying for the Junior Data Analyst position. Our recruitment team will review your application and contact shortlisted candidates.",safe,english,own
+"Hi Ramya, could you please share the latest version of your resume before tomorrow's recruitment discussion?",safe,english,own
+"Your job application has been successfully submitted. You can track its progress through the careers portal.",safe,english,own
+"Please do not share your interview meeting link publicly. It is intended only for registered candidates.",safe,english,own
+"Your online training session will begin at 11 AM. The meeting link is available in your registered email.",safe,english,own
+"Your password was changed successfully. If you made this change, no further action is required.",safe,english,own
+"We noticed a login from your registered laptop. If this was you, there is nothing you need to do.",safe,english,own
+"Never share your OTP or password with anyone. Our customer support representatives will not ask for these details.",safe,english,own
+"Your account will remain active during the scheduled maintenance period. Some services may be temporarily unavailable.",safe,english,own
+"Please ignore the suspicious message circulating in the office group. Our IT department has confirmed that it is not an official company communication.",safe,english,own
+"The cybersecurity awareness session will explain how to identify fake links, suspicious attachments and phishing emails.",safe,english,own
+"This sample message contains a fake bank link for educational purposes. Do not open the link or enter personal information.",safe,english,own
+"The security team has asked employees to report suspicious emails using the Report Phishing option in their email application.",safe,english,own
+"The word urgent in the subject line does not automatically mean an email is fraudulent. Please verify the sender and context before responding.",safe,english,own
+"Please review the attached AI safety research document. It includes examples of prompt injection attempts for academic discussion.",safe,english,own
+"The report contains the phrase ignore previous instructions as an example of a malicious prompt. It is included only for analysis.",safe,english,own
+"Your antivirus subscription is active until December. Automatic updates are enabled on your device.",safe,english,own
+"Your software update was installed successfully. Restart your computer when convenient to complete the installation.",safe,english,own
+"Your cloud storage is currently using 45 percent of the available space. You can review stored files from your account.",safe,english,own
+"Your mobile recharge of Rs 299 was successful. The selected plan includes 1.5 GB of data per day.",safe,english,own
+"Your broadband bill of Rs 799 has been generated. Please complete payment before the due date using the official provider portal.",safe,english,own
+"Your LPG cylinder booking has been confirmed. The delivery partner will contact you when the cylinder is out for delivery.",safe,english,own
+"Your insurance premium receipt is available in your registered account. Please download it for your records.",safe,english,own
+"Your mutual fund monthly investment was processed successfully. You can view the transaction in your investment account.",safe,english,own
+"Your pension contribution statement for the current financial year is available through the official portal.",safe,english,own
+"Your library membership will expire next month. You can renew it at the library counter or through the official website.",safe,english,own
+"Hi, I received a message claiming that my account would be blocked. I have not clicked the link and would like to verify whether it is genuine.",safe,english,own
+"Dear customer, we have received your complaint regarding the delayed refund. Our support team will provide an update within three working days.",safe,english,own
+"Your service request has been registered successfully. Reference number: SR582914. Please retain this number for future communication.",safe,english,own
+"Your appointment has been rescheduled to Friday at 3 PM as requested. Please confirm your availability with the clinic.",safe,english,own
+"Aapka salary payment successfully bank account mein credit ho gaya hai. Balance check karne ke liye official banking app use karein.",safe,hinglish,own
+"Kal ki meeting 11 baje se 12 baje shift ho gayi hai. Please sab log updated schedule check kar lena.",safe,hinglish,own
+"Aapka electricity bill Rs 950 hai aur last date 25 November hai. Official website se payment kar sakte ho.",safe,hinglish,own
+"Please previous attachment ignore kar dena. Usmein kuch mistakes thi, updated file abhi bhej raha hoon.",safe,hinglish,own
+"Aapka order successfully dispatch ho gaya hai. Delivery kal afternoon tak expected hai.",safe,hinglish,own
+"OTP kisi ke saath share mat karna. Ye sirf aapke login verification ke liye hai.",safe,hinglish,own
+"Kal college mein placement training session hai. Sab students ko 9:30 AM tak auditorium mein report karna hai.",safe,hinglish,own
+"Aapka UPI payment successfully complete ho gaya hai. Transaction details official app mein available hain.",safe,hinglish,own
+"Mujhe ek suspicious email mila hai jo bank account block hone ke baare mein bol raha hai. Please check karke batao.",safe,hinglish,own
+"Is document mein fake links aur phishing messages ke examples hain. Ye sirf cybersecurity awareness training ke liye hai.",safe,hinglish,own
+"Aapka interview Wednesday ko 10 baje scheduled hai. Please resume aur certificates ready rakhna.",safe,hinglish,own
+"Office ka password policy update hua hai. IT team ne sab employees ko strong password use karne ko bola hai.",safe,hinglish,own
+"Aapka mobile recharge successful hai. Plan ki validity 28 days hai. Details official app mein check kar sakte ho.",safe,hinglish,own
+"Kal evening 6 baje cricket match hai. Sab log time par ground par aa jana.",safe,hinglish,own
+"College assignment submit ho gaya hai. Confirmation student portal par check kar lena.",safe,hinglish,own
+"Ungal bank account-ku Rs 2,500 credit aagiyirukku. Official banking app-la balance check pannunga.",safe,tamil_translit,own
+"Naalaiku morning 10 manikku meeting irukku. Ellarum time-ku vandhudunga.",safe,tamil_translit,own
+"Ungal electricity bill Rs 850. Last date 25 November. Official website moolama payment pannalam.",safe,tamil_translit,own
+"Previous attachment-ai ignore pannunga. Adhula mistake irundhuchu, correct file ippo anuppirukken.",safe,tamil_translit,own
+"Ungal order dispatch aagiduchu. Naalaiku delivery expected. App-la tracking details check pannunga.",safe,tamil_translit,own
+"OTP-ai yaar kittayum share panna vendam. Idhu login verification-ku mattum use aagum.",safe,tamil_translit,own
+"Naalaiku college-la placement training irukku. Students ellarum 9 mani-ku auditorium-ku vandhudunga.",safe,tamil_translit,own
+"Ungal UPI payment successful-a mudinjirukku. Transaction details official app-la irukku.",safe,tamil_translit,own
+"Enakku oru suspicious email vandhirukku. Bank account block aagumnu solludhu. Idhu genuine-ah nu check panni sollunga.",safe,tamil_translit,own
+"Indha document-la phishing messages examples irukku. Idhu cybersecurity awareness training-ku mattum use pannuvom.",safe,tamil_translit,own
+"Ungal interview Wednesday morning 10 manikku schedule pannirukanga. Resume-um certificates-um ready-ah vechukonga.",safe,tamil_translit,own
+"Office password policy update aagiyirukku. Strong password use panna IT team request pannirukanga.",safe,tamil_translit,own
+"Ungal mobile recharge successful-a mudinjirukku. Plan validity 28 days.",safe,tamil_translit,own
+"Naalaiku evening 6 manikku cricket match irukku. Ellarum ground-ku time-ku vandhudunga.",safe,tamil_translit,own
+"College assignment submit aagiduchu. Confirmation student portal-la check pannunga.",safe,tamil_translit,own
